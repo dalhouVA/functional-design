@@ -136,8 +136,7 @@ object documents {
     extension: Extension,
     dateCreated: LocalDateTime,
     size: Double,
-    access: AccessType,
-    permissions: List[DocPermissions]
+    access: AccessType
   )
 
   sealed trait Extension {
@@ -328,7 +327,7 @@ object portfolio {
     who: User,
     stock: Stock,
     quantity: Int,
-    totalCost: Double,
+    totalCost: BigDecimal,
     commission: Double,
     timestamp: LocalDateTime
   )
